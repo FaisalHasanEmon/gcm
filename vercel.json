@@ -1,0 +1,45 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/ingest",
+      "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/cron/brief",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/alerts?freq=hourly",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/alerts?freq=daily",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/cron/retention",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/admin/monitor",
+      "schedule": "*/15 * * * *"
+    }
+  ],
+  "functions": {
+    "app/api/admin/monitor/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/cron/alerts/route.ts": {
+      "maxDuration": 120
+    },
+    "app/api/cron/brief/route.ts": {
+      "maxDuration": 300
+    },
+    "app/api/cron/ingest/route.ts": {
+      "maxDuration": 300
+    },
+    "app/api/cron/retention/route.ts": {
+      "maxDuration": 300
+    }
+  }
+}
