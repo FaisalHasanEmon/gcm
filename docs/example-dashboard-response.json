@@ -1,0 +1,158 @@
+{
+  "theater": {
+    "theater_id":        "a1000000-0000-0000-0000-000000000001",
+    "name":              "Middle East – Iran/Israel/US",
+    "slug":              "me-iran-israel-us",
+    "importance_weight": 1.5,
+    "is_active":         true,
+    "created_at":        "2024-01-01T00:00:00.000Z"
+  },
+
+  "escalation": {
+    "score":            72,
+    "level":            "High",
+    "trend":            "Increasing",
+    "points_72h":       360,
+    "points_24h":       180,
+    "points_prev_24h":  150
+  },
+
+  "gci": {
+    "gci_score":             68,
+    "active_theaters_count": 2,
+    "theaters_summary": [
+      { "slug": "me-iran-israel-us",    "name": "Middle East – Iran/Israel/US",      "score": 72 },
+      { "slug": "eu-ukraine-russia",    "name": "Eastern Europe – Ukraine/Russia",   "score": 61 }
+    ],
+    "computed_at": "2024-04-18T14:22:00.000Z"
+  },
+
+  "breaking": {
+    "event_id":          "b0000001-0000-0000-0000-000000000000",
+    "theater_id":        "a1000000-0000-0000-0000-000000000001",
+    "timestamp_utc":     "2024-04-18T14:22:00.000Z",
+    "country_primary":   "Iran",
+    "location_name":     "Isfahan",
+    "lat":               32.657,
+    "lon":               51.677,
+    "location_precision":"approximate",
+    "actors_involved":   ["IRGC", "Unknown"],
+    "event_type":        "explosion",
+    "severity":          "critical",
+    "confidence":        "confirmed",
+    "evidence_type":     "news",
+    "is_signal":         false,
+    "headline":          "Large explosion near Isfahan military facility",
+    "summary_20w":       "Large explosion reported near Iranian military research facility in Isfahan; cause under investigation.",
+    "tags":              ["iran", "explosion", "military"],
+    "damage_asset":      "Military research facility",
+    "damage_type":       "explosion",
+    "importance_score":  88,
+    "escalation_points": 25,
+    "sources_count":     2
+  },
+
+  "developments": [
+    {
+      "event_id":        "b0000005-0000-0000-0000-000000000000",
+      "headline":        "IDF airstrike targets missile depot near Damascus",
+      "severity":        "critical",
+      "confidence":      "confirmed",
+      "importance_score": 90,
+      "timestamp_utc":   "2024-04-18T11:22:00.000Z",
+      "country_primary": "Israel",
+      "location_name":   "Northern Israel",
+      "sources_count":   2
+    },
+    {
+      "event_id":        "b0000002-0000-0000-0000-000000000000",
+      "headline":        "Rocket barrage fired toward Haifa metropolitan area",
+      "severity":        "critical",
+      "confidence":      "confirmed",
+      "importance_score": 85,
+      "timestamp_utc":   "2024-04-18T13:49:00.000Z",
+      "country_primary": "Israel",
+      "location_name":   "Haifa",
+      "sources_count":   2
+    }
+  ],
+
+  "casualties": [
+    { "country": "Israel",   "killed": 12, "injured": 43, "civilian_killed": 4,  "military_killed": 8,  "confidence": "confirmed" },
+    { "country": "Iran",     "killed": 28, "injured": 81, "civilian_killed": 12, "military_killed": 16, "confidence": "confirmed" },
+    { "country": "Lebanon",  "killed": 6,  "injured": 15, "civilian_killed": 3,  "military_killed": 3,  "confidence": "likely" },
+    { "country": "Syria",    "killed": 4,  "injured": 11, "civilian_killed": 2,  "military_killed": 2,  "confidence": "likely" }
+  ],
+
+  "damage": [
+    { "event_id": "b0000007-0000-0000-0000-000000000000", "damage_asset": "US Embassy",         "damage_type": "breach",   "country_primary": "Kuwait",       "severity": "high",     "confidence": "confirmed", "headline": "US Embassy compound damaged in Kuwait City" },
+    { "event_id": "b0000008-0000-0000-0000-000000000000", "damage_asset": "Military base",      "damage_type": "bombed",   "country_primary": "Syria",        "severity": "high",     "confidence": "confirmed", "headline": "Military base struck near Damascus suburb" },
+    { "event_id": "b0000009-0000-0000-0000-000000000000", "damage_asset": "Oil depot",          "damage_type": "fire",     "country_primary": "Israel",       "severity": "high",     "confidence": "confirmed", "headline": "Oil depot fire reported in Northern Israel" },
+    { "event_id": "b0000010-0000-0000-0000-000000000000", "damage_asset": "Airport runway",     "damage_type": "disabled", "country_primary": "Syria",        "severity": "medium",   "confidence": "likely",    "headline": "Damascus Airport runway reportedly struck" }
+  ],
+
+  "timeline": [
+    { "event_id": "b0000001-0000-0000-0000-000000000000", "timestamp_utc": "2024-04-18T14:22:00.000Z", "country_primary": "Iran",         "event_type": "explosion",        "severity": "critical", "confidence": "confirmed", "headline": "Large explosion near Isfahan military facility",     "sources_count": 2 },
+    { "event_id": "b0000002-0000-0000-0000-000000000000", "timestamp_utc": "2024-04-18T13:49:00.000Z", "country_primary": "Israel",       "event_type": "missile_launch",   "severity": "critical", "confidence": "confirmed", "headline": "Rocket barrage fired toward Haifa metropolitan area","sources_count": 2 },
+    { "event_id": "b0000003-0000-0000-0000-000000000000", "timestamp_utc": "2024-04-18T13:22:00.000Z", "country_primary": "Persian Gulf", "event_type": "naval_activity",   "severity": "high",     "confidence": "confirmed", "headline": "US destroyer skirmish with IRGC vessels off Hormuz","sources_count": 2 },
+    { "event_id": "b0000004-0000-0000-0000-000000000000", "timestamp_utc": "2024-04-18T13:00:00.000Z", "country_primary": "Syria",        "event_type": "drone_attack",     "severity": "high",     "confidence": "confirmed", "headline": "Drone strike near Aleppo northern outskirts",        "sources_count": 1 }
+  ],
+
+  "hotspots": [
+    { "cluster_id": 1, "location_name": "Northern Israel",   "lat": 33.10, "lon": 35.50, "event_count": 5, "max_severity": "critical" },
+    { "cluster_id": 2, "location_name": "Western Iran",      "lat": 32.66, "lon": 51.68, "event_count": 4, "max_severity": "critical" },
+    { "cluster_id": 3, "location_name": "Southern Lebanon",  "lat": 33.27, "lon": 35.52, "event_count": 3, "max_severity": "high"     },
+    { "cluster_id": 4, "location_name": "Persian Gulf",      "lat": 26.57, "lon": 56.25, "event_count": 3, "max_severity": "high"     }
+  ],
+
+  "regions": [
+    {
+      "country": "Iran",
+      "bullets": [
+        "Explosion near Isfahan military site reported, cause under investigation.",
+        "IRGC commander issued warning of proportional military response."
+      ],
+      "key_events": ["b0000001-0000-0000-0000-000000000000", "b0000006-0000-0000-0000-000000000000"]
+    },
+    {
+      "country": "Israel",
+      "bullets": [
+        "Rocket barrage intercepted by Iron Dome over Haifa.",
+        "IDF armored units deployed to northern border."
+      ],
+      "key_events": ["b0000002-0000-0000-0000-000000000000", "b0000013-0000-0000-0000-000000000000"]
+    }
+  ],
+
+  "analysis": {
+    "bullets": [
+      "Escalation risks remain elevated following recent airstrikes and retaliatory statements. (Confirmed)",
+      "Military activity near Isfahan suggests potential retaliatory posture is being prepared. (Likely)",
+      "US naval presence in Persian Gulf has escalated to heightened readiness. (Confirmed)"
+    ],
+    "generated_at": "2024-04-18T14:30:00.000Z",
+    "theater_slug": "me-iran-israel-us"
+  },
+
+  "daily_summary": {
+    "date":            "2024-04-18",
+    "total_incidents": 19,
+    "by_type": {
+      "airstrike":            4,
+      "explosion":            3,
+      "missile_launch":       2,
+      "naval_activity":       2,
+      "military_movement":    3,
+      "infrastructure_damage":2,
+      "official_statement":   2,
+      "drone_attack":         1
+    },
+    "top3": [
+      { "headline": "IDF airstrike targets missile depot near Damascus",  "importance_score": 90 },
+      { "headline": "Large explosion near Isfahan military facility",      "importance_score": 88 },
+      { "headline": "US destroyer skirmish with IRGC vessels off Hormuz", "importance_score": 80 }
+    ]
+  },
+
+  "generated_at": "2024-04-18T14:30:15.000Z"
+}
