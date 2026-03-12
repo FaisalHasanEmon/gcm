@@ -16,7 +16,7 @@ import * as dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 dotenv.config();
 
-import { validateConfig, hasConfigErrors } from '../lib/config';
+import { validateConfig, hasConfigErrors } from '../lib/config.ts';
 
 const warnings = validateConfig();
 
