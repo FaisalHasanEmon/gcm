@@ -28,7 +28,7 @@
 -- - The existing events_theater_time_idx is kept; it still serves queries
 --   that span all confidence levels (e.g. admin dashboards, data exports).
 
-CREATE INDEX CONCURRENTLY IF NOT EXISTS events_theater_time_conf_idx
+CREATE INDEX IF NOT EXISTS events_theater_time_conf_idx
   ON events (theater_id, timestamp_utc DESC)
   WHERE confidence IN ('confirmed', 'likely');
 
