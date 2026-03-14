@@ -13,7 +13,7 @@
 -- event. We use a partial unique index rather than a table constraint so that
 -- CREATE INDEX CONCURRENTLY can be used — safe on a live database with no locking.
 
-CREATE UNIQUE INDEX CONCURRENTLY IF NOT EXISTS event_sources_event_url_unique
+CREATE UNIQUE INDEX IF NOT EXISTS event_sources_event_url_unique
   ON event_sources (event_id, url);
 
 COMMENT ON INDEX event_sources_event_url_unique IS
